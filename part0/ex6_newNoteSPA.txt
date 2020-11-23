@@ -1,0 +1,13 @@
+note over Browser
+user clicks submit for a new note
+end note
+
+note over Browser
+onSubmit event handler executes
+redrawNotes() to display new note
+then executes sendToServer()
+to send note to server 
+end note
+
+Browser->Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa (With JSON data of the new note)
+Server-->Browser: HTP Status code 201 (Note created)
